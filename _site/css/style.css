@@ -1,0 +1,31 @@
+h1{
+	font-size:30px;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	text-transform: uppercase;
+	margin-bottom:20px;
+}
+
+h2{
+	font-size:21px;	
+	text-transform: uppercase;
+	border-bottom-style: solid;
+	border-bottom-width: medium;
+	
+}
+
+h3{
+	font-size:18px;	
+	font-weight:normal;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+.class_info{
+	text-align: right;
+}
+
+.week{
+	text-align:right;
+}
+

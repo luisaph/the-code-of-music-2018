@@ -1,0 +1,105 @@
+---
+layout: default
+---
+<div class="row">
+	<h1>{{ page.number }} {{ page.title }}</h1>
+</div>
+<!-- Unit Description -->
+{% if page.overview %}
+	<div class="row unit_description">
+		<h3>Overview</h3>
+		{{ page.overview }}
+	</div>
+{% endif %}
+
+<div class="row">
+	<div class="span3"> 	
+		<p>Learning Activities</p>
+	</div>	
+	<div class="span9" style="margin-top:10px">
+		{% assign pages = site.pages | sort: 'number' %}
+		{% for la in pages %}
+			{% if la.categories contains "learning_activity" %}
+				{% if la.unit == page.number %}
+				<div class="row">
+					<div class="span3">
+							<a href={{ site.baseurl }}{{ la.url }}>{{ la.number }} . {{ la.title }} </a>
+					</div >
+					
+					<div class="span5">
+						{{ la.short_description }}
+					</div >
+					<div class="span1">
+						{% if la.duration %}
+							~{{ la.duration }}' 
+						{% endif %}
+					</div >
+				</div>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+		
+	</div>
+</div>	
+
+{% if page.project_prompt %}
+	<div class="mainrow row">
+		<div class="span3"> 	
+			<p>Project Prompt</p>
+		</div>	
+		<div class="span6"> 
+			<p>{{ page.project_prompt }}</p>
+		</div>	
+	</div>
+{% endif %}
+
+{% if page.project_inspirations %}
+		<div class="mainrow row">
+		    	<div class="span3">
+		    		<p>Final Project Inspiration</p>
+		    	</div>
+		</div>
+		{% for project in page.final_project_inspirations %}
+		  {% capture thecycle %}{% cycle '0', '1', '2' %}{% endcapture %}
+		  {% if thecycle == '0' %}
+		    <div class="mainrow row">
+		    	<div class="span3">
+		    	</div>
+		  {% endif %}
+
+		  <div class="span3"> 	
+		  		<a href="{{project.url}}" target='_blank' >
+				<img src="{{project.image | prepend: site.baseurl }}" width="100%" ></img>
+				</a>
+				<div class="info" >
+					<a href="{{project.url}}" target='_blank' >{{project.title}}</a>
+				</div>
+			</div>
+
+		  {% if thecycle == '2' %}	
+		    </div> 
+		  {% endif %}
+		{% endfor %}
+	{% endif %}
+		</div>
+	</div>
+</div>
+
+{{ page.content }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

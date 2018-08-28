@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+      <?php include_once("analyticstracking.php")   ?>
+      <div class="container">  
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </body>
+</html>

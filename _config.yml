@@ -1,0 +1,8 @@
+# Site settings
+title: The Code of Music
+description: ""
+baseurl: "/"
+url: ""
+permalink: /:categories/:title
+exclude: [Gemfile, Gemfile.lock]
+include: [units]
