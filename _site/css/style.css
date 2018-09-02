@@ -21,6 +21,13 @@ h3{
 	border-bottom-width: thin;
 }
 
+h4{
+	font-size:14px;
+	font-weight:normal;
+	margin:0px;
+	padding:0px;
+}
+
 .class_info{
 	text-align: right;
 }
