@@ -114,7 +114,7 @@ title: The Code of Music
 					<li><a href="https://editor.p5js.org/luisa/sketches/ryyAhvlwX">Play a sound</a></li>
 					<!-- <li><a href="https://editor.p5js.org/luisa/sketches/S1J5rOgP7">Trigger several sounds</a></li> -->
 					<li><a href="https://editor.p5js.org/luisa/sketches/HJzH7VEuX">Animate following playback progress</a></li>
-					<li><a href="https://editor.p5js.org/luisa/sketches/S181SEEdX">Play sounds + animate</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/S181SEEdX">Trigger sounds + animate</a></li>
 				</ul>
 			</div>
 		</div>
@@ -124,9 +124,17 @@ title: The Code of Music
 			</div>
 			<div class="span6">
 				<p>Create a digital, audio-visual, sample based instrument. You can record your own samples, or use existing ones. There are <a href="https://commons.wikimedia.org/wiki/Commons:Free_media_resources/Sound">plenty of free sound libraries</a> online, for example the <a href="http://www.philharmonia.co.uk/explore/sound_samples">London Philarmonia Orchestra's</a> and <a href="https://freesound.org">freesound.org</a>.</p>
-				<p>Once it's done (or almost done), compose a ~20-30 second piece using your instrument and do a video recording of it. You can do a screen capture using Quicktime, and use audio routing software like <a href="https://soundflower.en.softonic.com/mac">Soundflower</a> to capture the sound as well. Post this video to your blog, along with some documentation of your process.</p>
+				<p>Once it's done (or almost done), compose a ~20-30 second piece using your instrument and do a video recording of it. You can use screen capture software like Quicktime. Post this video to your blog, along with some documentation of your process.</p>
 				<p>Link to blog post and sketch from the <a href="https://github.com/luisaph/the-code-of-music-2018/wiki/Homework">Homework Wiki</a>.</p>
 				<p>Read <a href="http://bobcat.library.nyu.edu/primo-explore/fulldisplay?docid=nyu_aleph003069912&context=L&vid=NYU&lang=en_US&search_scope=all&adaptor=Local%20Search%20Engine&isFrbr=true&tab=all&query=any,contains,daniel%20levitin&sortby=date&facet=frbrgroupid,include,22427351&mode=basic&offset=0">This is your brain on music, Chapter 2: Foot tapping</a>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span2">
+				<h4>Resources<h4>
+			</div>
+			<div class="span6">
+				<p>Mozilla's <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API">introduction to the Web Audio API</a></p>
 			</div>
 		</div>
 	</div>
@@ -137,26 +145,35 @@ title: The Code of Music
 		<h2>Part I: the elements</h2>
 	</div>
 </div> -->
-<!-- <div class="row">
+ <div class="row">
 	<div class="span8">
 		<a name="Rhythm"></a>
-		<h3>Rhythm</h3>
+		<h3>Time and Rhythm</h3>
 		<div class="row">
 			<div class="span2">
 				<h4>Class Meeting</h4>
 			</div>
 			<div class="span6">
-				<p>Listen: Beats, tempo, subdivision, accents, syncopation, polyrhythm</p>
-				<p>Design: Sketch two different interfaces to explore rhythm</p>
+				<p>Review assignments + Discuss reading</p>
+				<p>Listen: Beats, tempo, subdivision, accents, syncopation, cross-rhythms</p>
 				<p>Code:</p>
 				<ul>
-					<li>Time: draw loop >> sound loop</li>
-					<li>Create a sequencer tutorial. Durations. </li> 
-					<li>Variations over time: probability, interactivity</li>
-					<li>Syncopation? Polyrhythm?</li> 
-				</ul>				
-				<p>Interact & Discuss: <a href="https://github.com/luisaph/the-code-of-music-2018/wiki/Examples">Examples Page</a></p>
-				
+					<li>Play a sound over and over: <br/>  
+						<ul>
+							<li><a href="https://editor.p5js.org/luisa/sketches/rJKneVpdX">Use the draw loop</a></li>
+							<li><a href="https://editor.p5js.org/luisa/sketches/r1jPWEp_Q">Create a separate loop</a></li>
+							<li>Discuss clock problem --> Tone.js</li>
+						</ul>
+					</li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/BkVi7rS2G">Play a sound in Tone.js</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/HkfbSHH3M">Play a beat</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/r1YeU3pdX">Change the tempo</a> <!-- <a href="https://editor.p5js.org/luisa/sketches/SyfA5haOm">Use a slider</a> --></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/ryiC22pdX">Count the beats in a bar</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/BJlLgp6_Q">Add accents</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/HJheL66um">Add (auto) Syncopation</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/r1pfgnAdQ">Play cross-rhythms</a></li>
+					<!-- <li>Variations over time: probability, interactivity</li> -->
+				</ul>		
 			</div>
 		</div>
 		<div class="row">
@@ -164,12 +181,29 @@ title: The Code of Music
 				<h4>Assignments<h4>
 			</div>
 			<div class="span6">
-				Focusing on one or more of the concepts covered in class, create an interactive piece that explores rhythm. Post the working sketch and a recording of a 20-second performance of it to your blog.
+				<p>Listen: find one or more examples of one of the elements of rhythm, and add it to our <a href="https://github.com/luisaph/the-code-of-music-2018/wiki/Collaborative-Playlist">collaborative playlist</a> page under Rhythm.</p>
+				<p>Interact: pick two <a href="https://github.com/luisaph/the-code-of-music-2018/wiki/Examples">rhythm project examples</a>. Write a short response.</p>
+				<p>Design: focusing on one or more of the concepts covered in class, sketch an interface to explore/compose with rhythm. Consider different contexts, materials, users, spaces ––don't limit yourself to what you know how to implement.</p>
+				<p>Code: create a rhythmic sketch/composition and record a 20-30s video of it.</p>
+				<p>Add links to your blog posts and sketch to the <a href="https://github.com/luisaph/the-code-of-music-2018/wiki/Homework">Homework Wiki</a>.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span2">
+				<h4>Resources<h4>
+			</div>
+			<div class="span6">
+				<p><a href="https://tonejs.github.io/docs/dev/Transport">Tone.js's Transport</a></p>
+				<p><a href="https://github.com/Tonejs/Tone.js/wiki/Time">Time in Tone.js</a></p>
+				<p>If you want to dig deeper into scheduling in Web Audio: <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">A Tale of Two Clocks</a></p>
+				
 			</div>
 		</div>
 	</div> 
-</div>-->
-<!-- 
+</div>
+
+
+
 <div class="row">
 	<div class="span8">
 		<a name="Melody"></a>
@@ -181,6 +215,13 @@ title: The Code of Music
 			<div class="span6">
 				<p>Pitches, intervals, scales</p>
 				<p>Code:</p>
+				<ul>
+					<li>Transport Review + Drawing</li>
+					<ul>
+						<li><a href="https://editor.p5js.org/luisa/sketches/B1oCPHH3z">Make a pattern</a>. <a href="https://editor.p5js.org/luisa/sketches/rJNHFHS2z">Add pattern arrays</a>.</li>
+						<li><a href="https://editor.p5js.org/luisa/sketches/HyJF15Roz">Make an interactive drum machine</a></li> 
+					</ul>
+				</ul>
 				<ul>
 					<li>Note representation: frequencies and MIDI</li>
 					<li>Play a score</li>
@@ -201,6 +242,7 @@ title: The Code of Music
 		</div>
 	</div>
 </div>
+<!-- 
 <div class="row">
 	<div class="span8">
 		<a name="Synthesis"></a>
