@@ -35,17 +35,17 @@
 		<h2>Syllabus Overview</h2>
 		<ol>
 			<li><a href="#Introduction">Introduction</a></li>
-			<li><a href="#Rhythm">Rhythm</a></li>
-			<li><a href="#Melody">Melody</a></li>
-			<li>Timbre: Synthesis</li>
+			<li><a href="#Rhythm">Rhythm</a>. Beats, tempo, subdivision, accents, syncopation, cross-rhythms</li>
+			<li><a href="#Melody">Melody</a>. Pitches, notes, intervals, scales</li>
+			<li><a href="#Timbre">Timbre: Synthesis</a>. Additive, subtractive and FM synthesis</li>
 			<li>Harmony</li>
 			<li>Timbre: Sampling + Effects</li>
+			<li>Structure + Interactivity</li> <!-- Transport + Events -->
 			<li>Midterm Project Presentations</li>
 			<li>Randomness, Probability, Markov Chains</li> <!-- Structure? Production? -->
 			<li>Formal Grammars. L-Systems. Guest Speaker TBD.</li>
 			<li>Neural Networks. Guest Speaker TBD.</li> <!-- Data? -->
 			<li>Final Project Proposals</li>
-			<li>Workshop</li>
 			<li>User Testing + Feedback</li>
 			<li>Final Project Presentations</li>
 		</ol>
@@ -174,8 +174,8 @@
 				<h4>Class Meeting</h4>
 			</div>
 			<div class="span6">
-				<p>Review assignments + Discuss reading</p>
-				<p>Listen: Beats, tempo, subdivision, accents, syncopation, cross-rhythms</p>
+				<p>Review assignments + discuss reading</p>
+				<p>Listen: beats, tempo, subdivision, accents, syncopation, cross-rhythms</p>
 				<p>Code:</p>
 				<ul>
 					<li>Play a sound over and over: <br/>  
@@ -213,8 +213,7 @@
 				<h4>Resources<h4>
 			</div>
 			<div class="span6">
-				<p><a href="https://tonejs.github.io/docs/dev/Transport">Tone.js's Transport</a></p>
-				<p><a href="https://github.com/Tonejs/Tone.js/wiki/Time">Time in Tone.js</a></p>
+				<p>Tone.js: <a href="https://tonejs.github.io/docs/dev/Transport">Transport</a>, <a href="https://github.com/Tonejs/Tone.js/wiki/Time">Time in Tone.js</a></p>
 				<p>If you want to dig deeper into scheduling in Web Audio: <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">A Tale of Two Clocks</a></p>
 				
 			</div>
@@ -236,11 +235,14 @@
 				<p>Listen: pitches, notes, intervals, scales</p>
 				<p>Code: 
 					<ul>
-						<li>Time review + <a href="https://editor.p5js.org/luisa/sketches/BJFhlPFYX">Sequencer example</a></li>
+						<li>Time review + <a href="https://editor.p5js.org/luisa/sketches/BJFhlPFYX">Sequencer</a></li>
 						<li><a href="https://editor.p5js.org/luisa/sketches/BkPWAPFtX">Pitches, notes, scales</a></li>
+						<li><a href="https://editor.p5js.org/luisa/sketches/ry7VOxnFQ">Notes + durations example pattern</a></li>
+						<!-- <li><a href="https://editor.p5js.org/luisa/sketches/HJuANxhYm">MIDI note numbers drawing example</a></li> -->
+						
 					</ul>
 				</p>
-				<!-- <p>Interact & Discuss: Song Maker</p> -->
+				<!-- <p>Interact & Discuss: </p> -->
 				<!-- <p>Design: Sketch an interface to play with melody</p> -->
 			</div>
 		</div>
@@ -249,7 +251,7 @@
 				<h4>Assignments</h4>
 			</div>
 			<div class="span6">
-				<p>Listen: find one or more melody examples you find interesting (think of modes, range, contour). Add it to our collaborative playlist page under Melody.</p>
+				<p>Listen: find one or more melody examples you find interesting (think of modes/scales, range, contour). Add it to our collaborative playlist page under Melody.</p>
 				<p>Code: Create an interactive study exploring melody. Record a 20-second composition using it. Post both to your blog.</p>
 				<p>Code, optional: Extend the Sequencer example so that it allows you to create melodies (instead of playing drums, have it play notes)</p>
 			</div>
@@ -267,15 +269,26 @@
 			</div>
 			<div class="span6">
 				<p>
-					<ul><li>Overtones (harmonic, inharmonic sounds)</li>
+					<ul><li>Melody review, Transport events</li>
+						<li>Overtones (harmonic, inharmonic sounds)</li>
 						<li>Synthesis (additive, subtractive, FM)</li>
 					</ul>
 				</p>
 				<p>Code</p>
 				<ul>
-					<li>FM Synth</li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/HkOf5icYX">Oscillators</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/Hk6BcjcY7">ADSR Envelope</a>, <a href="https://editor.p5js.org/luisa/sketches/BkJcY3jtQ">ADSR with examples</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/SJT4qhstm">Additive synthesis</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/SkEKDRsFm">Subtractive synthesis</a>. Steps: 
+						<ul>
+							<li><a href="https://editor.p5js.org/luisa/sketches/r1uFUaoFm">Oscillator + ADSR + Filter</a></li>
+							<li><a href="https://editor.p5js.org/luisa/sketches/rke27CjtQ">+ Filter Envelope</a></li>
+							<li><a href="https://editor.p5js.org/luisa/sketches/SkEKDRsFm">+ LFO</a></li>
+						</ul>
+					</li>
+					<li>FM Synthesis</li>
 				</ul>
-				<p>Interact & Discuss:</p>
+				<p>Interact & Discuss: Moog Mother-32, online synth</p>
 				<p>Design</p>
 			</div>
 		</div>
@@ -289,6 +302,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="row">
 	<div class="span8">
 		<a name="Harmony"></a>
