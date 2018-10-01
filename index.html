@@ -193,7 +193,7 @@ title: The Code of Music
 				<h4>Resources<h4>
 			</div>
 			<div class="span6">
-				<p>Tone.js: <a href="https://tonejs.github.io/docs/dev/Transport">Transport</a>, <a href="https://github.com/Tonejs/Tone.js/wiki/Time">Time in Tone.js</a></p>
+				<p>Tone.js: <a href="https://tonejs.github.io/docs/dev/Transport">Transport</a>, <a href="https://github.com/Tonejs/Tone.js/wiki/Time">Time</a></p>
 				<p>If you want to dig deeper into scheduling in Web Audio: <a href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">A Tale of Two Clocks</a></p>
 				
 			</div>
@@ -238,7 +238,6 @@ title: The Code of Music
 		</div>
 	</div>
 </div>
-<!-- 
 <div class="row">
 	<div class="span8">
 		<a name="Synthesis"></a>
@@ -248,28 +247,37 @@ title: The Code of Music
 				<h4>Class Meeting</h4>
 			</div>
 			<div class="span6">
-				<p>
-					<ul><li>Melody review, Transport events</li>
-						<li>Overtones (harmonic, inharmonic sounds)</li>
-						<li>Synthesis (additive, subtractive, FM)</li>
+				<p>Discuss: Assignments</p>
+				<p>Listen, Interact: 
+					<ul>
+						<li>a brief history</li>
+						<li>harmonic, inharmonic sounds</li>
+						<li>pitch, timbre, volume. additive, subtractive, FM synthesis</li>
 					</ul>
 				</p>
-				<p>Code</p>
+				</p>
+				<p>Code:</p>
 				<ul>
-					<li><a href="https://editor.p5js.org/luisa/sketches/HkOf5icYX">Oscillators</a></li>
-					<li><a href="https://editor.p5js.org/luisa/sketches/Hk6BcjcY7">ADSR Envelope</a>, <a href="https://editor.p5js.org/luisa/sketches/BkJcY3jtQ">ADSR with examples</a></li>
-					<li><a href="https://editor.p5js.org/luisa/sketches/SJT4qhstm">Additive synthesis</a></li>
-					<li><a href="https://editor.p5js.org/luisa/sketches/SkEKDRsFm">Subtractive synthesis</a>. Steps: 
+					<li><a href="https://editor.p5js.org/luisa/sketches/Hk6BcjcY7">Noise + Volume Envelope</a>. Also see <a href="https://tonejs.github.io/docs/r12/NoiseSynth">NoiseSynth</a> and <a href="https://tonejs.github.io/docs/r12/MembraneSynth"> MembraneSynth</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/BkJcY3jtQ">Tone + Volume Envelopes</a>. Also see <a href="https://tonejs.github.io/docs/r12/Synth">Synth</a></li>
+					<li>Additive Synthesis
 						<ul>
+							<li><a href="https://editor.p5js.org/luisa/sketches/Hy8lBa197">Two Oscillators</a></li>
+							<li><a href="https://editor.p5js.org/luisa/sketches/H1-ON615Q">+ Volume Envelopes</a></li>
+							<li><a href="https://editor.p5js.org/luisa/sketches/SJT4qhstm">Six Oscillators + Envelopes</a>. If adding frequencies from the harmonic series, you can simply partials (harmonics) to an <a href="https://tonejs.github.io/docs/r12/Oscillator">Oscillator</a> (look into oscillator.partials)</li>
+						</ul>
+					</li>
+					<li>Subtractive synthesis
+						<ul>
+							<li><a href="https://editor.p5js.org/luisa/sketches/HkOf5icYX">Oscillators</a></li>
 							<li><a href="https://editor.p5js.org/luisa/sketches/r1uFUaoFm">Oscillator + ADSR + Filter</a></li>
 							<li><a href="https://editor.p5js.org/luisa/sketches/rke27CjtQ">+ Filter Envelope</a></li>
 							<li><a href="https://editor.p5js.org/luisa/sketches/SkEKDRsFm">+ LFO</a></li>
+							<li><a href="https://tonejs.github.io/docs/r12/MonoSynth">MonoSynth</a> has these features built in. For LFO effects, see <a href="https://tonejs.github.io/docs/r12/Tremolo">Tremolo</a> (LFO affecting volume), <a href="https://tonejs.github.io/docs/r12/Vibrato">Vibrato</a> (LFO affecting pitch), and <a href="https://tonejs.github.io/docs/r12/AutoFilter">AutoFilter</a> (LFO affecting the filter)
 						</ul>
 					</li>
-					<li>FM Synthesis</li>
+					<li>FM Synthesis: try creating different timbres using <a href="https://tonejs.github.io/docs/r12/FMSynth">FMSynth</a></li>
 				</ul>
-				<p>Interact & Discuss: Moog Mother-32, online synth</p>
-				<p>Design</p>
 			</div>
 		</div>
 		<div class="row">
@@ -277,12 +285,25 @@ title: The Code of Music
 				<h4>Assignments</h4>
 			</div>
 			<div class="span6">
-				<p>Create an interactive composition using only synthesizers, focusing on sound texture</p>
+				<p>Add a synth-based piece to our <a href="https://github.com/luisaph/the-code-of-music-2018/wiki/Collaborative-Playlist">collaborative playlist</a> page under Synthesis.</p>
+				<p>Create an interactive composition + performance using only synthesizers, focusing on sound texture.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span2">
+				<h4>Resources</h4>
+			</div>
+			<div class="span6">
+				<ul>
+					<li><a href="https://musiclab.chromeexperiments.com/Spectrogram/">Spectrogram</a> with audio examples</li>
+					<li>A <a href="http://teropa.info/harmonics-explorer/">tool to play with harmonics</a></li>
+					<li>A <a href="https://docs.cycling74.com/max7/tutorials/06_synthesischapter01">Max tutorial</a> on additive synthesis</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 </div>
-
+<!--
 <div class="row">
 	<div class="span8">
 		<a name="Harmony"></a>
