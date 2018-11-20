@@ -24,8 +24,8 @@ title: The Code of Music
 			<li><a href="#Midterms">Midterm Project Presentations</a></li>
 			<li><a href="#Markov">Algorithms: Markov Chains. Applications: Music Exhibition Design</a></li> <!-- Structure? Production? IxD?-->
 			<li><a href="#LSystems">Algorithms: L-Systems. Applications: Music Exhibition Design (Presentations)</a></li>
-			<li>Algorithms: Neural Networks. Applications: New instruments for electronic music performance.</li> <!-- Data? -->
-			<li>Final Project Proposals</li>
+			<li><a href="#NN">Algorithms: Neural Networks. Applications: New instruments for electronic music performance</a></li> 
+			<li><a href="#FP_Proposals">Final Project Proposals</a></li>
 			<li>User Testing + Feedback</li>
 			<li>Final Project Presentations</li>
 		</ol>
@@ -218,7 +218,6 @@ title: The Code of Music
 						<li><a href="https://editor.p5js.org/luisa/sketches/BkPWAPFtX">Pitches, notes, scales</a></li>
 						<li><a href="https://editor.p5js.org/luisa/sketches/ry7VOxnFQ">Notes + durations example pattern</a></li>
 						<!-- <li><a href="https://editor.p5js.org/luisa/sketches/HJuANxhYm">MIDI note numbers drawing example</a></li> -->
-						
 					</ul>
 				</p>
 				<!-- <p>Interact & Discuss: </p> -->
@@ -501,17 +500,18 @@ title: The Code of Music
 			<ul>
 				<li>Markov Chain from scratch:
 						<ul>
-							<li><a href="">Melody</a></li>
-							<li><a href="">Rhythm</a></li>
-							<li><a href="">Chords</a></li>
-							<li><a href="">Arpeggios</a></li>
-							<li>Add interaction: 
+							<li><a href="https://editor.p5js.org/luisa/sketches/Hyx0AP2u3m">Melody</a></li>
+							<li><a href="https://editor.p5js.org/luisa/sketches/SkNEgbAnm
+">Rhythm</a></li>
+							<li><a href=" https://editor.p5js.org/luisa/sketches/SJ9gIZR27">Chords</a></li>
+							
+							<!-- <li>Add interaction: 
 									<ul>
 										<li><a href="">Melody</a></li>
 										<li><a href="">Chords</a></li>
 										<li><a href="">Arpeggios</a></li>
 									</ul>
-							</li>
+							</li> -->
 							<li><a href="https://editor.p5js.org/luisa/sketches/SyHYZf02X
 ">Generate from a score</a></li>
 				</ul>
@@ -549,7 +549,8 @@ title: The Code of Music
 			<div class="span2">
 				<h4>Class Meeting</h4>
 			</div>
-			<div class="span6">				
+			<div class="span6">	
+				<p>Listen: Grammars and L-Systems</p>			
 				<p>Code:</p>
 				<ul>
 					<li><a href="https://editor.p5js.org/luisa/sketches/rJAW2t4pX">Algae melody</a></li>
@@ -587,23 +588,28 @@ title: The Code of Music
 		</div>
 	</div>
 </div>
-<!--
+
 <div class="row">
 	<div class="span8">
+		<a name="NN"></a>
 		<h3>Algorithms: Neural Networks. Applications: Experimental Performance</h3>
 		<div class="row">
 			<div class="span2">
 				<h4>Class Meeting</h4>
 			</div>
 			<div class="span6">
-				<p>Listen:</p>
+				<p>Listen: Neural Network structure, RNNs and musical composition</p>
 				<p>Code:</p>
-				<ul>
-					<li></li>
-					<li></li>
-				</ul>
-				<p>Interact:</p>
-				<p>Design:</p>
+				<ul><li><a href="https://editor.p5js.org/luisa/sketches/r1JNj8gRm">MusicRNN format + Tone.Part</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/S1AEnUg0Q">MusicRNN continue example</a></li>
+					<li><a href="https://editor.p5js.org/luisa/sketches/BJhm1wgC7">DrumsRNN continue example</a>. <a href="https://github.com/tensorflow/magenta-js/tree/master/music/checkpoints">Other checkpoints</a></li></ul>
+				<p>Interact: 
+					<ul>
+						<li><a href="https://magenta.tensorflow.org/2016/06/10/recurrent-neural-network-generation-tutorial">musicRNN</a> application: <a href="https://experiments.withgoogle.com/ai/ai-duet/view/">A.I. Duet</a> [<a href="https://github.com/googlecreativelab/aiexperiments-ai-duet">code</a>]</li>
+						<li><a href="https://magenta.tensorflow.org/music-vae">musicVAE</a> application: <a href="https://experiments.withgoogle.com/ai/beat-blender/view/">Beat Blender</a> [<a href="https://github.com/googlecreativelab/beat-blender">code</a>]</li>
+					</ul>
+				</p>
+				<p>Guest speaker: <a href="http://http://half-half.es/">Merche Blasco</a>, Sound artist, Composer, Performer. <br/>PhD Candidate in Music Composition at <a href="http://as.nyu.edu/music.html">NYU Arts & Science</a></p>
 			</div>
 		</div>
 		<div class="row">
@@ -611,7 +617,21 @@ title: The Code of Music
 				<h4>Assignments</h4>
 			</div>
 			<div class="span6">
-				Create
+				<p>Prepare your final project proposal (5 mins). You can include inspirations, source material, existing code sketches, and questions for your classmates. What is your project? Who is your project for? How will people experience it? Is it expressive / needed / entertaining / intriguing / provocative?</p>
+				</p>
+				<p><b>Optional</b>: create an interface to interact with a pre-trained neural network</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span2">
+				<h4>Resources</h4>
+			</div>
+			<div class="span6">
+				<ul>
+					<li><a href="https://medium.com/artists-and-machine-intelligence/neural-nets-for-generating-music-f46dffac21c0">Neural Nets for Generating Music</a></li>
+					<li><a href="https://hello-magenta.glitch.me/">Tutorial on making music with magenta.js</a>, <a href="https://magenta.tensorflow.org/demos/web/">Demos</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all">Promises</a>, <a href="https://www.midi.org/specifications-old/item/gm-level-1-sound-set">General MIDI</a> (search for Percussion key map)</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -619,10 +639,11 @@ title: The Code of Music
 
 <div class="row">
 	<div class="span8 part-title" >
-		<h2>Final Projects</h2>
+		<a name="FP_Proposals"></a>
+		<h2>Final Project Proposals</h2>
 	</div>
 </div>
- -->
+ 
 <div class="row">
 	<div class="span8">
 		<h2>Policies</h2>
